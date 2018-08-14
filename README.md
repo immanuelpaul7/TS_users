@@ -5,6 +5,7 @@ APIs to:
   2. Declare a random person (of all the users created in the last 30 mins) as a winner
 
 # Database Table
+```
 CREATE TABLE `TS_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary key users table',
   `first_name` varbinary(2550) DEFAULT NULL,
@@ -18,6 +19,7 @@ CREATE TABLE `TS_users` (
   `is_winner` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 
 # Postman API:
 https://www.getpostman.com/collections/f00393b3e92571009b8b
