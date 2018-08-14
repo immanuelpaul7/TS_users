@@ -16,8 +16,8 @@ func dbConn() (db *sql.DB) {
 	dbUser := "dbUser"
 	dbPass := "dbPass"
 	dbName := "dbName"
-  dbHost := "dbHost"
-  dbPort := "dbPort"
+  	dbHost := "dbHost"
+  	dbPort := "dbPort"
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@tcp("+dbHost+":"+dbPort+")/"+dbName+"?charset=utf8")
 	checkErr(err)
 	return db
